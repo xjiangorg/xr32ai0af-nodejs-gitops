@@ -1,0 +1,6 @@
+apiVersion: "pipelinesascode.tekton.dev/v1alpha1"
+kind: Repository
+metadata:
+  name: xr32ai0af-nodejs-gitops-repository
+spec:
+  url: https://github.com/xjiangorg/xr32ai0af-nodejs-gitops

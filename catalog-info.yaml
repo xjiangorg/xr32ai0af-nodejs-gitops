@@ -1,0 +1,21 @@
+apiVersion: backstage.io/v1alpha1
+kind: Resource
+metadata:
+  name: xr32ai0af-nodejs-gitops
+  description: This is GitOps manifest for xr32ai0af-nodejs   
+  links:
+    - url: https://www.redhat.com/en/solutions/trusted-software-supply-chain
+      title: Trusted Secure Supply Chain 
+      icon: dashboard
+      type: admin-dashboard
+  annotations:    
+    argocd/app-selector: rhtap/gitops=xr32ai0af-nodejs
+    backstage.io/kubernetes-id: xr32ai0af-nodejs 
+    backstage.io/techdocs-ref: dir:. 
+    github.com/project-slug: xjiangorg/xr32ai0af-nodejs-gitops   
+spec:
+  type: gitops
+  owner: user:guest 
+  lifecycle: experimental
+  dependsOn:
+    - component:xr32ai0af-nodejs
